@@ -25,4 +25,5 @@ public class RoomController {
     public Room findByName(@RequestParam String name){
         return roomService.findByName(name);
     }
+
 }

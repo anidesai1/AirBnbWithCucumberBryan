@@ -1,7 +1,7 @@
 Feature:
   I want to be able to integration test Spring endpoints
 
-  Scenario:
+  Scenario Outline:
     Given I have a Rest Spring Endpoint
     Given the following rooms are available to rent
       | Room Name  |
