@@ -33,12 +33,10 @@ public class Populator {
 
         User user1 = new User();
         user1.setName("Ani");
-        user1.setId(1L);
         userRepository.save(user1);
 
         User user2 = new User();
         user2.setName("Dhwani");
-        user2.setId(2L);
         userRepository.save(user2);
     }
 }

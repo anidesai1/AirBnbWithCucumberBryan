@@ -33,4 +33,9 @@ public class RoomController {
     @GetMapping("/users")
     public List<User> getAllUsers(){
         return userService.findAll();}
+
+    @GetMapping("/user")
+    public User findByUserName(@RequestParam String name){
+        return userService.findByName(name);
+    }
 }
