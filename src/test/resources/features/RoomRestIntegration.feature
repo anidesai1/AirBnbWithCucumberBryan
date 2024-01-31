@@ -3,5 +3,14 @@ Feature:
 
   Scenario:
     Given I have a Rest Spring Endpoint
-    When I call the room endpoint by name for rooms
-    Then Cliffhanger is the result from the server
+    Given the following rooms are available to rent
+      | Room Name  |
+      | Cliffhanger |
+      | Slickrock  |
+    When I call the room endpoint by name for <Room>
+    Then <Server> is the result from the server
+
+    Examples:
+      | Room          | Server |
+      | "Cliffhanger" | "Cliffhanger" |
+      | "Slickrock"   | "Slickrock" |
