@@ -1,3 +1,5 @@
+package stepDefinitions;
+
 import com.airbnb.model.Room;
 import com.airbnb.model.User;
 import io.cucumber.java.en.And;
